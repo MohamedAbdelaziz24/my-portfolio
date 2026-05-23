@@ -425,8 +425,10 @@ section {
 
 @media (max-width: 768px) {
       .site-header {
-            flex-direction: column;
-            align-items: stretch;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
             padding: 20px 6%;
             gap: 18px;
       }
@@ -434,6 +436,7 @@ section {
       .main-nav {
             justify-content: center;
             gap: 16px;
+            width: auto;
       }
 
       .main-nav a {
