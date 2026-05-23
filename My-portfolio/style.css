@@ -383,6 +383,7 @@ section {
       color: #ffffff;
       /* Icon default color */
       font-size: 24px;
+
       /* Icon size */
       size: 50px;
       transition: color 0.3s ease, transform 0.3s ease;
