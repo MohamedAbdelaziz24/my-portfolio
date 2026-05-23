@@ -426,22 +426,23 @@ section {
 @media (max-width: 768px) {
       .site-header {
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-items: center;
             justify-content: space-between;
             padding: 20px 6%;
-            gap: 18px;
+            gap: 15px;
       }
 
       .main-nav {
-            justify-content: center;
-            gap: 16px;
-            width: auto;
+            justify-content: flex-start;
+            gap: 12px;
+            flex-wrap: nowrap;
+
       }
 
       .main-nav a {
-            width: auto;
-            padding: 12px 16px;
+            white-space: nowrap;
+            padding: 10px 14px;
       }
 
       .hero {
@@ -480,6 +481,7 @@ section {
       }
 
       .site-header {
+            flex-wrap: nowrap;
             padding-top: 18px;
             padding-bottom: 18px;
             gap: 14px;
@@ -491,12 +493,16 @@ section {
 
       .main-nav {
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
             margin: 0;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
       }
 
       .main-nav a {
             font-size: 0.95rem;
             padding: 10px 12px;
+            white-space: nowrap;
       }
 }
